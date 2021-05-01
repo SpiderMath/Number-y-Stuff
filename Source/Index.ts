@@ -106,6 +106,51 @@ class NumberyStuff {
 			values: results,
 		};
 	}
+
+	static checkColombianNumber(n: number) {
+		if(n < 1) throw new Error("Only natural numbers can be self numbers");
+
+		n = Math.round(n);
+
+		const DN = String(n).length;
+
+		const R = (N: number)=> 1 + ((N - 1) % 9);
+		const RN = R(n);
+
+		const H = (N: number) => {
+			if(N % 2 === 0) return RN / 2;
+			else return (RN + 9) / 2;
+		};
+
+		const HN = H(n);
+
+		let self: boolean = true;
+		const results: number[] = [];
+
+		for(let k = 0; k <= DN; k++) {
+			const abs = Math.abs(
+				n - HN - (9 * k),
+			);
+
+			const LHS = abs
+				.toString()
+				.split("")
+				.map(Number)
+				.reduce((a, b) => a + b, 0);
+
+			const RHS = HN + (9 * k);
+
+			if(LHS === RHS) {
+				self = false;
+				results.push(abs);
+			}
+		}
+
+		return {
+			selfNumber: self,
+			results,
+		};
+	}
 };
 
 export default NumberyStuff;
