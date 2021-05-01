@@ -8,5 +8,9 @@ export default function SmallestNumberWhoseSquareHasNDigits(N: number) {
 	 * N = 4 --> 32
 	 * N = 5 --> 100
 	 * Therefore my series is: 1, 4, 10, 32, 100
+	 * Just realised after 10 pages of writing damn
+	 * Every number is of form Math.ceil((10) ^ {(n - 1)/2})
+	 * I guess we can work on that >:)
 	 */
+
 };
