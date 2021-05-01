@@ -172,6 +172,22 @@ class NumberyStuff {
 
 		return reverseNumber === result + 1;
 	}
+
+	static PossibleAPsWithSumAndDifferenceGiven(Sum: number, Difference: number) {
+		Sum = Sum * 2;
+
+		let count = 0;
+
+		for (let i = 1; i <= Math.sqrt(Sum); i++) {
+			if (Sum % i == 0) {
+				if (((Sum / i) - (Difference * i) + Difference) % 2 == 0) count++;
+
+				if (((Difference * i) - (Sum / i) + Difference) % 2 == 0) count++;
+			}
+		}
+
+		return count;
+	}
 };
 
 export default NumberyStuff;
