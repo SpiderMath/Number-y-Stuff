@@ -3,9 +3,6 @@
   "version": "0.0.1",
   "description": "Just random Number-y Stuff :P",
   "main": "index.js",
-  "scripts": {
-    "test": "npx ts-node-dev ./Tests/Index.ts"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SpiderMath/Number-y-Stuff.git"
