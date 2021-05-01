@@ -151,6 +151,27 @@ class NumberyStuff {
 			results,
 		};
 	}
+
+	static checkTcefrepNumber(n: number) {
+		if(n < 1) throw new Error("Only natural numbers can be self numbers");
+
+		n = Math.round(n);
+
+		const reverseNumber = Number(String(n).split("").reverse().join(""));
+
+		let result = 0;
+
+		// find all divisors which divides 'num'
+		for (let i = 2; i <= Math.sqrt(n); i++) {
+			// if 'i' is divisor of 'num'
+			if (n % i == 0) {
+				if (i == (n / i)) result += i;
+				else result += (i + n / i);
+			}
+		}
+
+		return reverseNumber === result + 1;
+	}
 };
 
 export default NumberyStuff;
