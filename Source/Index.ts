@@ -75,6 +75,37 @@ class NumberyStuff {
 	};
 
 	static SmallestNumberWhoseSquareHasNDigits = SmallestNumberWhoseSquareHasNDigits;
+
+	static CheckJunctionNumber(N: number) {
+		if(N < 1) throw new Error("Only natural numbers can be Junction Numbers!");
+
+		N = Math.round(N);
+
+		const getSumOfNumber = (n: number) => {
+			let sum = 0;
+
+			String(n)
+				.split("")
+				.forEach(strVal => sum = sum + Number(strVal));
+
+			return sum;
+		};
+
+		let count = 0;
+		const results: number[] = [];
+
+		for(let i = 0; i < N; i++) {
+			if(i + getSumOfNumber(i) === N) {
+				count++;
+				results.push(i);
+			}
+		}
+
+		return {
+			isJunction: count >= 2,
+			values: results,
+		};
+	}
 };
 
 export default NumberyStuff;
