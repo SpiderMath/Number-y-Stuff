@@ -1,3 +1,5 @@
+import SmallestNumberWhoseSquareHasNDigits from "./Functions/SmallestNumberWhoseSquareHasNDigits";
+
 class NumberyStuff {
 	static GeometricSeries = {
 		InfiniteSum(a: number, r: number) {
@@ -71,6 +73,8 @@ class NumberyStuff {
 
 		return ((count2 - count1) - 1);
 	};
+
+	static SmallestNumberWhoseSquareHasNDigits = SmallestNumberWhoseSquareHasNDigits;
 };
 
 export default NumberyStuff;
