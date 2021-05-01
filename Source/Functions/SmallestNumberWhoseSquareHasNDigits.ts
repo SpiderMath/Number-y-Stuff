@@ -12,5 +12,14 @@ export default function SmallestNumberWhoseSquareHasNDigits(N: number) {
 	 * Every number is of form Math.ceil((10) ^ {(n - 1)/2})
 	 * I guess we can work on that >:)
 	 */
+	if(N < 1) throw new Error("N can't be less than 1!");
 
+	N = Math.round(N);
+
+	return Math.ceil(
+		Math.pow(
+			10,
+			((N - 1) / 2),
+		),
+	);
 };
