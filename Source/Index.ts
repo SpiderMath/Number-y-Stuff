@@ -52,6 +52,25 @@ class NumberyStuff {
 		},
 	};
 
+	static CountOfSameLengthStringsThatExistLexicographicallyBetween2Strings(s1: string, s2: string) {
+
+		if(s1.length !== s2.length) throw new Error("The length of the strings has to be the same!");
+
+		const LexicographicallyLesserStrings = (stringy: string) => {
+			let count = 0;
+
+			for(let i = 0; i < stringy.length; i++) {
+				count += (stringy.charCodeAt(i) - 97) * Math.pow(26, stringy.length - i - 1);
+			}
+
+			return count;
+		};
+
+		const count1 = LexicographicallyLesserStrings(s1.toLowerCase());
+		const count2 = LexicographicallyLesserStrings(s2.toLowerCase());
+
+		return ((count2 - count1) - 1);
+	};
 };
 
 export default NumberyStuff;
