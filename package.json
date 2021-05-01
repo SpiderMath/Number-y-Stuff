@@ -1,0 +1,24 @@
+{
+  "name": "undefined",
+  "version": "0.0.1",
+  "description": "Just random Number-y Stuff :P",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx ts-node-dev ./Tests/Index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpiderMath/Number-y-Stuff.git"
+  },
+  "author": "Defective Detective",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/SpiderMath/Number-y-Stuff/issues"
+  },
+  "homepage": "https://github.com/SpiderMath/Number-y-Stuff#readme",
+  "dependencies": {
+    "@types/node": "^15.0.1",
+    "@typescript-eslint/parser": "^4.22.0",
+    "eslint": "^7.25.0"
+  }
+}
