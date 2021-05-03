@@ -1,5 +1,6 @@
 import SmallestNumberWhoseSquareHasNDigits from "./Functions/SmallestNumberWhoseSquareHasNDigits";
 import MobileNumericSequenceToSentence from "./Functions/MobileNumericSequenceToSentence";
+import EulersTotientFunction from "./Functions/EulersTotientFunction";
 
 class NumberyStuff {
 	static GeometricSeries = {
@@ -191,6 +192,8 @@ class NumberyStuff {
 	}
 
 	static MobileNumericSequenceToSentence = MobileNumericSequenceToSentence;
+
+	static EulersTotientFunction = EulersTotientFunction;
 };
 
 export default NumberyStuff;
