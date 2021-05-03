@@ -2,6 +2,7 @@ import SmallestNumberWhoseSquareHasNDigits from "./Functions/SmallestNumberWhose
 import MobileNumericSequenceToSentence from "./Functions/MobileNumericSequenceToSentence";
 import EulersTotientFunction from "./Functions/EulersTotientFunction";
 import isGapfulNumber from "./Functions/isGapfulNumber";
+import isSelfDividingNumber from "./Functions/isSelfDividingNumber";
 
 class NumberyStuff {
 	static GeometricSeries = {
@@ -197,6 +198,8 @@ class NumberyStuff {
 	static EulersTotientFunction = EulersTotientFunction;
 
 	static isGapfulNumber = isGapfulNumber;
+
+	static isSelfDividingNumber = isSelfDividingNumber;
 };
 
 export default NumberyStuff;
