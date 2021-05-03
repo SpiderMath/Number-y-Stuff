@@ -1,2 +1,2 @@
-# Number-y-Stuff
- Yoooooooo, just Havin some fun with Numbers in TypeScript
+# Random-TS-Stuff
+ Yoooooooo, just Havin some fun and stuff in TypeScript
