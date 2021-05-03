@@ -1,1 +1,0 @@
- ${NumberyStuff.isUglyNumber(number)}`);

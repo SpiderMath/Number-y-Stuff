@@ -7,6 +7,7 @@ import isDoubletonNumber from "./Functions/isDoubletonNumber";
 import isUglyNumber from "./Functions/isUglyNumber";
 import isTidyNumber from "./Functions/isTidyNumber";
 import isPandigital from "./Functions/isPandigitalNumber";
+import isDisariumNumber from "./Functions/isDisariumNumber";
 
 class NumberyStuff {
 	static GeometricSeries = {
@@ -212,6 +213,8 @@ class NumberyStuff {
 	static isTidyNumber = isTidyNumber;
 
 	static isPandigitalNumber = isPandigital;
+
+	static isDisariumNumber = isDisariumNumber;
 };
 
 export default NumberyStuff;
