@@ -5,6 +5,7 @@ import isGapfulNumber from "./Functions/isGapfulNumber";
 import isSelfDividingNumber from "./Functions/isSelfDividingNumber";
 import isDoubletonNumber from "./Functions/isDoubletonNumber";
 import isUglyNumber from "./Functions/isUglyNumber";
+import isTidyNumber from "./Functions/isTidyNumber";
 
 class NumberyStuff {
 	static GeometricSeries = {
@@ -206,6 +207,8 @@ class NumberyStuff {
 	static isDoubletonNumber = isDoubletonNumber;
 
 	static isUglyNumber = isUglyNumber;
+
+	static isTidyNumber = isTidyNumber;
 };
 
 export default NumberyStuff;
