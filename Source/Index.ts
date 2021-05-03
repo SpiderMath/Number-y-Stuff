@@ -3,6 +3,7 @@ import MobileNumericSequenceToSentence from "./Functions/MobileNumericSequenceTo
 import EulersTotientFunction from "./Functions/EulersTotientFunction";
 import isGapfulNumber from "./Functions/isGapfulNumber";
 import isSelfDividingNumber from "./Functions/isSelfDividingNumber";
+import isDoubletonNumber from "./Functions/isDoubletonNumber";
 
 class NumberyStuff {
 	static GeometricSeries = {
@@ -200,6 +201,8 @@ class NumberyStuff {
 	static isGapfulNumber = isGapfulNumber;
 
 	static isSelfDividingNumber = isSelfDividingNumber;
+
+	static isDoubletonNumber = isDoubletonNumber;
 };
 
 export default NumberyStuff;
