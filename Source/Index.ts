@@ -1,4 +1,5 @@
 import SmallestNumberWhoseSquareHasNDigits from "./Functions/SmallestNumberWhoseSquareHasNDigits";
+import MobileNumericSequenceToSentence from "./Functions/MobileNumericSequenceToSentence";
 
 class NumberyStuff {
 	static GeometricSeries = {
@@ -188,6 +189,8 @@ class NumberyStuff {
 
 		return count;
 	}
+
+	static MobileNumericSequenceToSentence = MobileNumericSequenceToSentence;
 };
 
 export default NumberyStuff;
