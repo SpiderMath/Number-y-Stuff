@@ -4,6 +4,7 @@ import EulersTotientFunction from "./Functions/EulersTotientFunction";
 import isGapfulNumber from "./Functions/isGapfulNumber";
 import isSelfDividingNumber from "./Functions/isSelfDividingNumber";
 import isDoubletonNumber from "./Functions/isDoubletonNumber";
+import isUglyNumber from "./Functions/isUglyNumber";
 
 class NumberyStuff {
 	static GeometricSeries = {
@@ -203,6 +204,8 @@ class NumberyStuff {
 	static isSelfDividingNumber = isSelfDividingNumber;
 
 	static isDoubletonNumber = isDoubletonNumber;
+
+	static isUglyNumber = isUglyNumber;
 };
 
 export default NumberyStuff;
