@@ -9,6 +9,7 @@ import isTidyNumber from "./Functions/isTidyNumber";
 import isPandigital from "./Functions/isPandigitalNumber";
 import isDisariumNumber from "./Functions/isDisariumNumber";
 import GeneratePascalsTriangle from "./Functions/GeneratePascalsTriangle";
+import isFibonacciNumber from "./Functions/isFibonacciNumber";
 
 class NumberyStuff {
 	static GeometricSeries = {
@@ -218,6 +219,8 @@ class NumberyStuff {
 	static isDisariumNumber = isDisariumNumber;
 
 	static GeneratePascalsTriangle = GeneratePascalsTriangle;
+
+	static isFibonacciNumber = isFibonacciNumber;
 };
 
 export default NumberyStuff;
